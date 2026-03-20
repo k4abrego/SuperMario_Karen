@@ -45,6 +45,5 @@ public class MoverConInputAction : MonoBehaviour
         Vector2 movimiento /*vector de movimiento*/ = accionMover.ReadValue<Vector2>();
         //transform.position = (Vector2)transform.position + Time.deltaTime * velocidadX * movimiento;
         rb.linearVelocityX = velocidadX * movimiento.x;
-        rb.linearVelocityY = rb.linearVelocityY; //para que no se pierda la velocidad vertical al saltar
     }
 }
