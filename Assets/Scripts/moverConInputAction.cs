@@ -9,9 +9,10 @@ public class MoverConInputAction : MonoBehaviour
 
     [SerializeField]
     private InputAction accionSaltar;
-    
+
 
     private Rigidbody2D rb;
+    private EstadoPersonaje estado;
 
     private float velocidadX = 7f;
     private float velocidadY = 7f;
@@ -20,6 +21,7 @@ public class MoverConInputAction : MonoBehaviour
     {
         accionMover.Enable();
         rb = GetComponent<Rigidbody2D>();
+        estado = GetComponentInChildren<EstadoPersonaje>();
     }
 
     void OnEnable()
@@ -36,7 +38,10 @@ public class MoverConInputAction : MonoBehaviour
 
     public void saltar(InputAction.CallbackContext context) //quien accionó el evento, el contexto de la acción, se puede usar para saber si se mantuvo presionado o no, etc.
     {
-        rb.linearVelocityY = velocidadY; //lo hará subir
+        if (estado.estaEnPiso)
+        {
+            rb.linearVelocityY = velocidadY;
+        }
     }
 
     // Update is called once per frame
@@ -44,6 +49,7 @@ public class MoverConInputAction : MonoBehaviour
     {
         Vector2 movimiento /*vector de movimiento*/ = accionMover.ReadValue<Vector2>();
         //transform.position = (Vector2)transform.position + Time.deltaTime * velocidadX * movimiento;
-        rb.linearVelocityX = velocidadX * movimiento.x;
+        rb.linearVelocityX = movimiento.x * velocidadX;
+        
     }
 }

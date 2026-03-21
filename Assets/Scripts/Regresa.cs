@@ -24,7 +24,7 @@ public class Regresa : MonoBehaviour
 
     void Regresar()
     {
-        SceneManager.LoadScene("EscenaMenu");
+        SceneManager.LoadScene("Menu");
     }
 
 
