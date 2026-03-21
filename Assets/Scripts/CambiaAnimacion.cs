@@ -5,14 +5,14 @@ public class CambiaAnimacion : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer sr; 
-    private MoverConInputAction estado;
+    private EstadoPersonaje estado;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
-        estado = GetComponentInChildren<MoverConInputAction>();
+        estado = GetComponentInChildren<EstadoPersonaje>();
     }
 
     // Update is called once per frame
