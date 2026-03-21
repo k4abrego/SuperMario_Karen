@@ -1,10 +1,7 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/MenuPrincipal.uss?fileID=7433441132597879392&amp;guid=a86947092eaec48e39ba9eb709c75d7a&amp;type=3#MenuPrincipal"/>
-    <ui:VisualElement name="MenuPrincipal" class="menu" style="flex-grow: 1; width: 100%; background-color: rgba(108, 202, 180, 0); justify-content: center; align-items: stretch; align-content: center; font-size: 72px;">
-        <ui:Label text="Menú Principal" name="Titulo" picking-mode="Position" class="titulo" style="-unity-text-align: middle-center; height: 110px; width: 812px; white-space: nowrap; position: relative; top: 89px; left: 4px; color: rgb(25, 25, 112); filter: tint(rgb(51, 51, 51)); cursor: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/props/ghost-2.png?fileID=2800000&amp;guid=c0ee1a5e0a18346449623c11a376e0a8&amp;type=3#ghost-2&quot;);"/>
-        <ui:VisualElement name="Botones" class="botones" style="flex-grow: 1;">
-            <ui:Button text="Jugar Mapa" name="BotonJugarMapa" class="boton-juego" style="background-color: rgba(188, 188, 188, 0); align-items: center; justify-content: center; align-content: center;"/>
-            <ui:Button text="Jugar X" name="BotonJugarX" class="boton-juego" style="align-items: flex-end; justify-content: flex-end; background-color: rgba(76, 76, 76, 0);"/>
-        </ui:VisualElement>
+    <Style src="project://database/Assets/UI/MenuPrincipal.uss?fileID=7433441132597879392&amp;guid=a8d2e5c80b4db4461bc8d3d4905be0e3&amp;type=3#MenuPrincipal"/>
+    <ui:VisualElement name="MenuPrincipal" tabindex="0" focusable="true" class="menu" style="flex-grow: 1; justify-content: flex-start; align-content: center; font-size: 72px; -unity-text-align: middle-left; background-color: rgba(0, 0, 0, 0); margin-top: 70px;">
+        <ui:Label text="Tarea Unity" class="titulo" style="justify-content: center;"/>
     </ui:VisualElement>
+    <ui:Image source="project://database/Assets/Square.png?fileID=2800000&amp;guid=4c9196d9bee9e4380a00d530e4f9987c&amp;type=3#Square" style="justify-content: flex-end; align-items: center; align-content: stretch; background-size: 0% 0%; -unity-background-scale-mode: stretch-to-fill; background-color: rgba(76, 76, 76, 0); width: 80%; height: 60%; align-self: center; flex-direction: column-reverse; -unity-background-image-tint-color: rgba(255, 255, 255, 0);"/>
 </ui:UXML>
