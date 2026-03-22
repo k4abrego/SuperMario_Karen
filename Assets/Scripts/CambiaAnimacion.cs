@@ -1,12 +1,17 @@
+//Ana Karen Abrego Flores
+//A01753979
+
 using UnityEngine;
 
+// Actualiza la animacion del personaje segun su movimiento y estado en el suelo
 public class CambiaAnimacion : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer sr; 
     private EstadoPersonaje estado;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    // Cachea los componentes necesarios al iniciar el juego
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -15,7 +20,7 @@ public class CambiaAnimacion : MonoBehaviour
         estado = GetComponentInChildren<EstadoPersonaje>();
     }
 
-    // Update is called once per frame
+    // Sincroniza parametros del Animator en cada frame
     void Update()
     {
         animator.SetFloat("velocidad", Mathf.Abs(rb.linearVelocity.x));

@@ -1,14 +1,19 @@
+//Ana Karen Abrego Flores
+//A01753979
+
 using UnityEngine;
 
+// Script base para la pantalla de creditos
+// Se deja preparado para agregar logica futura
 public class Creeditos : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Inicializacion opcional
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    // Actualizacion por frame para futuras animaciones o interacciones
     void Update()
     {
         

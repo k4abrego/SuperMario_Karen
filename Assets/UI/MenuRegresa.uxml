@@ -1,6 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/MenuRegresa.uss?fileID=7433441132597879392&amp;guid=5dfcccfbd89674361bbba7817601fb55&amp;type=3#MenuRegresa"/>
-    <ui:VisualElement name="Menu" class="menu" style="flex-grow: 1; width: auto; height: auto; align-items: stretch;">
+    <ui:VisualElement name="Menu" class="menu" style="flex-grow: 1; width: auto; height: auto; align-items: flex-start;">
         <ui:Button text="Regresar" name="BotonRegresar" class="boton" style="justify-content: center; margin-left: 30px; margin-bottom: 30px; margin-right: 0; margin-top: 0; padding-top: 0; padding-left: 0; padding-right: 0; padding-bottom: 0; background-image: url(&quot;project://database/Assets/FreeButtonSet/Textures/buttons/button_150.png?fileID=2800000&amp;guid=cbb5f8f07e6166b4b9b2180a807d81de&amp;type=3#button_150&quot;); background-color: rgba(0, 0, 0, 0); color: rgb(255, 250, 250); -unity-font-style: bold;"/>
     </ui:VisualElement>
 </ui:UXML>

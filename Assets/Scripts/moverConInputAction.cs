@@ -1,6 +1,10 @@
+//Ana Karen Abrego Flores
+//A01753979
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+// Controla movimiento horizontal y salto usando el Input System.
 public class MoverConInputAction : MonoBehaviour
 {
     [SerializeField]
@@ -17,6 +21,7 @@ public class MoverConInputAction : MonoBehaviour
     private float velocidadX = 7f;
     private float velocidadY = 7f;
         
+    // Activa acciones y cachea componentes necesarios.
     void Start()
     {
         accionMover.Enable();
@@ -24,19 +29,22 @@ public class MoverConInputAction : MonoBehaviour
         estado = GetComponentInChildren<EstadoPersonaje>();
     }
 
+    // Registra el evento de salto al habilitar el objeto.
     void OnEnable()
     {
-        accionSaltar.Enable();  //cuando se habilita, se habiliytan sus acciones
+        accionSaltar.Enable();
         accionSaltar.performed += saltar;
     }
 
-    void OnDisable() //cuando está en pausa
+    // Desactiva y desuscribe el salto para evitar eventos duplicados.
+    void OnDisable()
     {
-        accionSaltar.Disable(); //lo 
+        accionSaltar.Disable();
         accionSaltar.performed -= saltar;
     }
 
-    public void saltar(InputAction.CallbackContext context) //quien accionó el evento, el contexto de la acción, se puede usar para saber si se mantuvo presionado o no, etc.
+    // Aplica velocidad vertical solo si el personaje esta en el suelo.
+    public void saltar(InputAction.CallbackContext context)
     {
         if (estado.estaEnPiso)
         {
@@ -44,11 +52,10 @@ public class MoverConInputAction : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    // Lee el input y actualiza la velocidad horizontal cada frame.
     void Update()
     {
-        Vector2 movimiento /*vector de movimiento*/ = accionMover.ReadValue<Vector2>();
-        //transform.position = (Vector2)transform.position + Time.deltaTime * velocidadX * movimiento;
+        Vector2 movimiento = accionMover.ReadValue<Vector2>();
         rb.linearVelocityX = movimiento.x * velocidadX;
         
     }
