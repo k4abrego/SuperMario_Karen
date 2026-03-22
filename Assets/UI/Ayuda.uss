@@ -1,0 +1,9 @@
+:root {
+}
+
+.hidden {
+    display: none;
+}
+
+.menu {
+}

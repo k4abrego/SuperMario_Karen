@@ -3789,10 +3789,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1702430672}
   - component: {fileID: 1702430671}
-  - component: {fileID: 1702430670}
   - component: {fileID: 1702430674}
   - component: {fileID: 1702430673}
+  - component: {fileID: 1702430670}
   - component: {fileID: 1702430675}
+  - component: {fileID: 1702430676}
   m_Layer: 0
   m_Name: StaticMario
   m_TagString: MainCamera
@@ -4048,6 +4049,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1702430676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702430669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 745ed215340b943a29232d474b731862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CambiaAnimacion
 --- !u!1001 &2079014284
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ui:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ui="UnityEngine.UIElements"
-    xmlns:uie="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
->
-    
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Ayuda.uss?fileID=7433441132597879392&amp;guid=a24dd76ab730d4e46aa525a42a7728df&amp;type=3#Ayuda"/>
+    <ui:VisualElement name="Help" class="popup hidden" style="flex-grow: 1; width: 909px; height: 621px; background-color: rgba(146, 124, 233, 0.6); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; position: absolute; left: 488px; top: 269px;">
+        <ui:Label text="What is Lorem Ipsum?" name="TituloAyuda" style="font-size: 48px; -unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-align: upper-center; margin-bottom: 20px;"/>
+        <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#10;Ut at urna vitae nibh malesuada dictum in convallis dui.&#10;Quisque pellentesque est varius pretium lacinia.&#10;Donec laoreet augue in imperdiet hendrerit.&#10;Ut aliquet purus quis rhoncus gravida.&#10;&#10;Vivamus venenatis nunc in posuere laoreet.&#10;Cras vel lectus a nibh blandit pretium at vel mi.&#10;Curabitur id ante ac dui faucibus convallis.&#10;Etiam ut elit ut nisl malesuada gravida.&#10;&#10;Pellentesque a mauris ac ex ultricies ornare." name="TextoAyuda" style="color: rgb(255, 255, 255); font-size: 32px; -unity-text-align: lower-center; justify-content: flex-start;"/>
+        <ui:Button text="X" name="BtnCloseHelp" style="width: 40px; height: 40px; position: absolute; right: 4px; top: 0;"/>
+    </ui:VisualElement>
 </ui:UXML>
